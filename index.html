@@ -5,21 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-  crossorigin="anonymous"
-/>
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,160 +17,122 @@
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
-  <h1>Test</h1>
-   <nav class="navbar navbar-expand-lg bg-light navbar-light">
-    <a href="#" class="navbar-brand">QTrip</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarNavDropdown" class="collapse navbar-collapse">
-      <ul class="navbar-nav d-flex justify-content-end w-100" >
-        <li class="nav-item active">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Explore</a>
-        </li>
-      </ul>
+
+  <nav class="navbar navbar-light navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">QTrip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"><span class="navbar-toggler-icon"></span></button>
+
+      <div class="navbar-collapse justify-content-end" id="navbarItems">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+        </ul>
+      </div>
+
     </div>
-   </nav> 
+  </nav>
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <!-- <div class="hero-image d-flex"></div> -->
-
-   <div class="hero-image d-flex justify-content-center align-items-center flex-column text-center">
+  <div class="hero-image d-flex text-white text-center justify-content-center align-items-center">
     <div class="container">
-    <!-- TODO: MODULE_LAYOUT --> 
+      <h1>Welcome to QTrip</h1>
+      <p class="sub-heading">Explore the world with fantastic places to  venture around</p>
+      <input class="hero-input" placeholder="Search a city"/>
+    </div>
+  </div>
+
+
+  <div class="container mt-3">
+    <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
-    <h1>Welcome to Qtrip</h1>
-    <p class="hero-subheading">Explore the world with enthusiasm</p>
-    <input type="text" class="hero-input" placeholder="Search a city">
-  </div>
-   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-6 mb-4 col-lg-3">
-        <!-- Tile -->
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Bengaluru</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/bengaluru.jpg" alt="bengaluru" class="img-responsive img-fluid tile-img">
+    <div class="row align-items-stretch">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/bengaluru.jpg" alt="Bengaluru">
+          <div class="tile-text">
+            <h4>Bengaluru</h4>
+            <p>100+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <!-- Tile -->
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Kolkata</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/kolkata.jpg" alt="kolkata" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/kolkata.jpg" alt="Kolkata">
+          <div class="tile-text">
+            <h4>Kolkata</h4>
+            <p>52+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <!-- Tile -->
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Goa</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/goa.jpg" alt="goa" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/goa.jpg" alt="Goa">
+          <div class="tile-text">
+            <h4>Goa</h4>
+            <p>180+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <!-- Tile -->
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Mumbai</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/mumbai.jpg" alt="mumbai" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/mumbai.jpg" alt="Mumbai">
+          <div class="tile-text">
+            <h4>Mumbai</h4>
+            <p>121+ places</p>
           </div>
         </a>
       </div>
-
-    </div>
-
-    <!-- Second row -->
-     <div class="row">
-      <div class="col-6 mb-4 col-lg-3">
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Singapore</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/singapore.jpg" alt="singapore" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/singapore.jpg" alt="Singapore">
+          <div class="tile-text">
+            <h4>Singapore</h4>
+            <p>89+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Dubai</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/dubai.jpg" alt="dubai" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/dubai.jpg" alt="Dubai">
+          <div class="tile-text">
+            <h4>Dubai</h4>
+            <p>74+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Malaysia</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/malaysia.jpg" alt="malaysia" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/malaysia.jpg" alt="Malaysia">
+          <div class="tile-text">
+            <h4>Malaysia</h4>
+            <p>172+ places</p>
           </div>
         </a>
       </div>
-
-      <div class="col-6 mb-4 col-lg-3">
-        <a href="#">
-          <div class="tile">
-            <div class="tile-text text-center">
-              <h5>Paris</h5>
-              <p>100+ Cities</p>
-            </div>
-            <img src="./assets/paris.jpg" alt="paris" class="img-responsive img-fluid tile-img">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 d-flex align-content-stretch flex-warp">
+        <a href="pages/adventures/index.html" class="tile">
+          <img class="img-fluid tile" src="assets/paris.jpg" alt="Paris">
+          <div class="tile-text">
+            <h4>Paris</h4>
+            <p>150+ places</p>
           </div>
         </a>
       </div>
-
     </div>
   </div>
+
   <footer>
-    <div class="container">© QTrip 2020</div>
+    <div class="container">© QTrip 2023</div>
   </footer>
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"
-></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
