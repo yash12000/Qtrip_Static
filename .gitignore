@@ -23,4 +23,3 @@ build/static/js/*.map
 build/*
 
 script.js
-assets/
